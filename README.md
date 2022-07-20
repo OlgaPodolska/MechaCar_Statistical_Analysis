@@ -3,20 +3,20 @@ R statistical study, multiple linear regression analysis and statistical differe
 
 # Purpose
 
-The purpose of that analysis is to review the production data for insights that may help the manufacturing team. 
-R version 4.2.1
-RStudio 2022.07.0 
+The purpose of that analysis is to review the production data for insights that may help the manufacturing team.   
+R version 4.2.1  
+RStudio 2022.07.0   
 
-# Results
+# Results  
 
-## Linear Regression to Predict MPG
-The MechaCar_mpg.csv dataset contains mpg test results for 50 prototype MechaCars. Results from analysis this data set:
+## Linear Regression to Predict MPG  
+The MechaCar_mpg.csv dataset contains mpg test results for 50 prototype MechaCars. Results from analysis this data set:  
 
-_mpg = (6.267)vehicle_length + (0.0012)vehicle_weight + (0.0688)spoiler_angle + (3.546)ground_clearance + (-3.411)AWD + (-104.0)_
+**mpg = (6.267)vehicle_length + (0.0012)vehicle_weight + (0.0688)spoiler_angle + (3.546)ground_clearance + (-3.411)AWD + (-104.0)**
 
 ![img1.png](/Images/img1.png) 
 
-** Statistical Summary:**
+**Statistical Summary:**
 
 * Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
 
@@ -65,24 +65,24 @@ However, in Lot 3 the p-Value is 0.04, which is lower than the common significan
 
 ## Study Design: MechaCar vs Competition
 
-* What metric or metrics are you going to test?
+* What metric or metrics are you going to test?  
 
-We should collect data for comparable models across all major manufacturers for past 3 years for metrics:
+We should collect data for comparable models across all major manufacturers for past 3 years for metrics:  
 
-_Safety Rating_ as Independent Variable
-_MPG (Gasoline Efficiency)_ as Independent Variable
-_Engine Type (Electric, Hybrid, Gasoline)_ as Independent Variable
-_Current Price_ as Dependent Variable
+_Safety Rating_ as Independent Variable  
+_MPG (Gasoline Efficiency)_ as Independent Variable  
+_Engine Type (Electric, Hybrid, Gasoline)_ as Independent Variable  
+_Current Price_ as Dependent Variable  
 
-* What is the null hypothesis or alternative hypothesis?
+* What is the null hypothesis or alternative hypothesis?  
 
-_Null Hypothesis:_ MechaCar is priced correctly based on its performance of key factors.
-_Alternative Hypothesis:_ MechaCar is not priced correctly based on performance of key factors.
+_Null Hypothesis:_ MechaCar is priced correctly based on its performance of key factors.  
+_Alternative Hypothesis:_ MechaCar is not priced correctly based on performance of key factors.  
 
-* What statistical test would you use to test the hypothesis? 
+* What statistical test would you use to test the hypothesis?   
 
 A multiple linear regression would be used to determine the factors that have the highest correlation/predictability with the list selling price (dependent variable); which combination has the greatest impact on price. 
 
-* What data is needed to run the statistical test?
+* What data is needed to run the statistical test?  
 
 I need data that will be correct and represent the true real-world results. To limit type I error (reject the null hypothesis when it is actually true) I would decrease the P to 0.1 as mentioned above and in order to limit type 2 error (fail to reject the null hypothesis when it is actually false) I would add additional measurments such a Resale Value or Average Annual Cost of Ownership.
