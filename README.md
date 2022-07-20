@@ -12,7 +12,7 @@ RStudio 2022.07.0
 ## Linear Regression to Predict MPG
 The MechaCar_mpg.csv dataset contains mpg test results for 50 prototype MechaCars. Results from analysis this data set:
 
-** mpg = (6.267)vehicle_length + (0.0012)vehicle_weight + (0.0688)spoiler_angle + (3.546)ground_clearance + (-3.411)AWD + (-104.0)**
+_mpg = (6.267)vehicle_length + (0.0012)vehicle_weight + (0.0688)spoiler_angle + (3.546)ground_clearance + (-3.411)AWD + (-104.0)_
 
 ![img1.png](/Images/img1.png) 
 
@@ -53,7 +53,8 @@ I performed t-tests to determine if all manufacturing lots are statistically dif
 
 ![img5.png](/Images/img5.png) 
 
-Here we can see the a p-Value is 0.06, which is higher than the common significance level of 0.05. It means there is not enough evidence to support rejecting the null hypothesis. In another words, the mean of all three manufacturing lots is statistically similar to the presumed population mean of 1500.
+Here we can see the a p-Value is 0.06, which is higher than the common Resale Value: Independent Variable
+Average Annual Cost of ownership  level of 0.05. It means there is not enough evidence to support rejecting the null hypothesis. In another words, the mean of all three manufacturing lots is statistically similar to the presumed population mean of 1500.
 
 In addition I performed t-tests to determine if  each lot individually is statistically different from the population mean of 1,500 pounds per square inch.
 
@@ -68,20 +69,20 @@ However, in Lot 3 the p-Value is 0.04, which is lower than the common significan
 
 We should collect data for comparable models across all major manufacturers for past 3 years for metrics:
 
-**Safety Rating** as Independent Variable
-**MPG (Gasoline Efficiency)** as Independent Variable
-**Engine Type (Electric, Hybrid, Gasoline)** as Independent Variable
-**Current Price** as Dependent Variable
+_Safety Rating_ as Independent Variable
+_MPG (Gasoline Efficiency)_ as Independent Variable
+_Engine Type (Electric, Hybrid, Gasoline)_ as Independent Variable
+_Current Price_ as Dependent Variable
 
 * What is the null hypothesis or alternative hypothesis?
 
-**Null Hypothesis:** MechaCar is priced correctly based on its performance of key factors.
-**Alternative Hypothesis:** MechaCar is not priced correctly based on performance of key factors.
+_Null Hypothesis:_ MechaCar is priced correctly based on its performance of key factors.
+_Alternative Hypothesis:_ MechaCar is not priced correctly based on performance of key factors.
 
 * What statistical test would you use to test the hypothesis? 
 
 A multiple linear regression would be used to determine the factors that have the highest correlation/predictability with the list selling price (dependent variable); which combination has the greatest impact on price. 
 
-What data is needed to run the statistical test?
+* What data is needed to run the statistical test?
 
 I need data that will be correct and represent the true real-world results. To limit type I error (reject the null hypothesis when it is actually true) I would decrease the P to 0.1 as mentioned above and in order to limit type 2 error (fail to reject the null hypothesis when it is actually false) I would add additional measurments such a Resale Value or Average Annual Cost of Ownership.
